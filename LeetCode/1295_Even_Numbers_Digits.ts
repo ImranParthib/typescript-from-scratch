@@ -6,7 +6,13 @@
  * @return {number}
  */
 const findNumbers = (nums: number[]): number => {
-    return 0;
+    let evenCount: number = 0;
+    for(let i: number = 0 ; i<nums.length; i++){
+        if(nums[i].toString().length %2===0){
+            evenCount++;
+        }
+    }
+    return evenCount;
 };
 
 let nums = [12, 34, 56, 677, 777, 89];

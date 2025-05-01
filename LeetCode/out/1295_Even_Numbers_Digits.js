@@ -6,14 +6,14 @@
  * @return {number}
  */
 var findNumbers = function (nums) {
-    var even = 0;
+    var evenCount = 0;
     for (var i = 0; i < nums.length; i++) {
         if (nums[i].toString().length % 2 === 0) {
-            even++;
+            evenCount++;
         }
     }
-    return even;
+    return evenCount;
 };
-var nums = [12, 345, 2, 6, 7896];
+var nums = [12, 34, 56, 677, 777, 89];
 var result = findNumbers(nums);
 console.log(result);
