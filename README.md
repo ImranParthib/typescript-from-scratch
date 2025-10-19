@@ -1,91 +1,116 @@
-# typescript-from-scratch 🚀
+# TypeScript Programming 🚀
 
-Welcome to **typescript-from-scratch**, a repository dedicated to learning and exploring TypeScript through practical examples and projects. Whether you're new to TypeScript or looking to deepen your understanding, this repository will guide you through the key concepts and best practices in modern TypeScript development.
+A comprehensive repository for learning TypeScript from fundamentals to advanced concepts through practical examples, algorithm implementations, and hands-on projects.
 
-## Table of Contents
+## 📚 Table of Contents
 
-- [Introduction](#introduction)
+- [About](#about)
 - [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [TypeScript Concepts](#typescript-concepts)
+- [Compilation & Execution](#compilation--execution)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## About
 
-TypeScript is a superset of JavaScript that adds static typing to the language, helping developers write safer and more robust code. This repository will take you through a journey from basic TypeScript fundamentals to advanced topics, focusing on practical implementation.
+This repository documents my journey learning TypeScript, featuring
 
 ## Getting Started
 
 ### Prerequisites
 
-Make sure you have the following installed:
-
-- [Node.js](https://nodejs.org) (version 14+ recommended)
+- [Node.js](https://nodejs.org) (v14 or higher)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- TypeScript (`npm install -g typescript`)
 
-### Setup
+### Installation
 
 1. Clone the repository:
-
    ```bash
-   git clone https://github.com/your-username/typescript-from-scratch.git
+   git clone https://github.com/imranparthib/typescript-from-scratch.git
    cd typescript-from-scratch
    ```
 
-2. Install dependencies:
+2. Install dependencies (if needed):
    ```bash
    npm install
    ```
-3. Start exploring TypeScript by compiling and running the sample code:
-   ```bash
-   npx tsc
-   node dist/index.js
-   ```
 
-## Folder Structure
 
-```plaintext
-/src            # Contains TypeScript source files
-/index.ts       # Sample TypeScript entry file
-/README.md      # Repository documentation
-/tsconfig.json  # TypeScript configuration file
-/package.json   # Node.js project configuration
+## Compilation & Execution
+
+### Compile TypeScript files
+
+```bash
+# Compile a single file
+tsc filename.ts
+
+# Compile with project configuration
+cd LeetCode  # or Series/
+tsc
 ```
 
-## TypeScript Concepts
+### Run compiled JavaScript
 
-This repository covers the following TypeScript topics:
+```bash
+node filename.js
+# Or if using outDir
+node out/filename.js
+```
 
-- **Basic Types**: Learn how to use types like string, number, boolean, array, and enum.
-- **Interfaces**: Create custom data structures with interfaces and type aliases.
-- **Functions**: Type your functions, including parameters and return types.
-- **Classes**: Work with object-oriented programming in TypeScript.
-- **Generics**: Build reusable components and functions using generics.
-- **Modules**: Learn how to split your code into reusable modules.
-- **TypeScript in React/Next.js**: Use TypeScript in modern web frameworks like React and Next.js.
+### Direct execution (without compilation)
+
+```bash
+# Install ts-node globally
+npm install -g ts-node
+
+# Run TypeScript directly
+ts-node filename.ts
+# or with code runner
+```
+
+### Project-specific compilation
+
+Each subfolder ([`LeetCode/`](LeetCode/), [`Series/`](Series/)) has its own [`tsconfig.json`](LeetCode/tsconfig.json) with configurations:
+- **Target**: ES6
+- **Module**: CommonJS
+- **Output**: `out/` directory
+- **Source Maps**: Enabled for debugging
+- **Strict Mode**: Enabled for type safety
 
 ## Contributing
 
-We welcome contributions! Feel free to fork this repository and submit a pull request if you would like to improve or enhance the content or design. 😊
+Contributions are welcome! Whether it's fixing bugs, adding new examples, or improving documentation.
 
-### Steps to Contribute:
+### How to Contribute
 
-1. Fork the repository.
-2. Create a new branch:
+1. Fork the repository
+2. Create your feature branch:
    ```bash
-   git checkout -b feature/your-feature-name
+   git checkout -b feature/amazing-feature
    ```
-3. Make your changes and commit:
+3. Commit your changes:
    ```bash
-   git commit -m "Added a new feature"
+   git commit -m "Add some amazing feature"
    ```
-4. Push the changes:
+4. Push to the branch:
    ```bash
-   git push origin feature/your-feature-name
+   git push origin feature/amazing-feature
    ```
-5. Submit a Pull Request.
+5. Open a Pull Request
+
+### Contribution Ideas
+- Add more LeetCode solutions
+- Implement additional algorithms
+- Create tutorials for advanced TypeScript features
+- Improve code documentation and comments
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+**Author**: Imran Parthib  
+**Connect**: [GitHub](https://github.com/imranparthib)
+
+Happy TypeScript coding! 💻✨

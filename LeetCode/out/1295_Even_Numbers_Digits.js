@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Find Numbers with Even Number of Digits
  * Author: Imran Parthib
@@ -5,15 +6,16 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findNumbers = function (nums) {
-    var evenCount = 0;
-    for (var i = 0; i < nums.length; i++) {
+const findNumbers = (nums) => {
+    let evenCount = 0;
+    for (let i = 0; i < nums.length; i++) {
         if (nums[i].toString().length % 2 === 0) {
             evenCount++;
         }
     }
     return evenCount;
 };
-var nums = [12, 34, 56, 677, 777, 89];
-var result = findNumbers(nums);
+let nums = [12, 34, 56, 677, 777, 89];
+const result = findNumbers(nums);
 console.log(result);
+//# sourceMappingURL=1295_Even_Numbers_Digits.js.map
